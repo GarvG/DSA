@@ -15,10 +15,13 @@ public class next_greater_element {
         {
             ans[i]=nums1[i];
         }
-        for(int i=nums1.length;i<nums2.length;i++)
+        int ince=nums1.length;
+        for(int i=0;i<nums2.length;i++)
         {
-            ans[i]=nums2[i];
+            ans[ince]=nums2[i];
+            ince++;
         }
+       // System.out.println(Arrays.toString(ans));
         int i=0;
         int j=ans.length-1;
         while(i<nums1.length)
@@ -34,7 +37,7 @@ public class next_greater_element {
                 {
                     if(ans[j+1]>nums1[i])
                     {
-                        nums1[i]=ans[j];
+                        nums1[i]=ans[j+1];
                     }
                     else
                     {
