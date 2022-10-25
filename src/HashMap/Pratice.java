@@ -25,10 +25,11 @@ public class Pratice {
 
         System.out.println(hm.get("INDIA"));  // GETTING THE VALUE IF EXISTS
         System.out.println(hm.get("UK"));  // GETTING NULL AS IT DO NOT EXISTS
-        System.out.println(hm.containsKey("PAK")); // CHECKS IT IS PRESENT OR NOT
+        System.out.println(!hm.containsKey("US1")); // CHECKS IT IS PRESENT OR NOT
 
         Set<String> keys=hm.keySet();
         System.out.println(keys);
+        System.out.println(hm.size());
     }
 
 }
