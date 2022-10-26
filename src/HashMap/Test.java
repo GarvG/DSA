@@ -2,7 +2,7 @@ package HashMap;
 import java.util.*;
 public class Test {
     public static void main(String[] args) {
-        String s="leetcode";
+        String s="";
         HashMap<Character, Integer> hm = new HashMap<>();
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
@@ -15,6 +15,7 @@ public class Test {
             }
 
         }
+        System.out.println(hm.size());
         System.out.println(hm);
     }
 }
