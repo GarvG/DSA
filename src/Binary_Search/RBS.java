@@ -1,5 +1,4 @@
 package Binary_Search;
-
 public class RBS {
     public static void main(String[] args) {
         int[] arr = {6,7,1,2,3,4,5};
@@ -72,4 +71,6 @@ public class RBS {
         }
         return -1;
     }
+
+
 }
