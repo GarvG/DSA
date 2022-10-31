@@ -2,8 +2,8 @@ package IMPORTANT;
 
 public class BOOKS_ALLOCATION {
     public static void main(String[] args) {
-        int []days={1,2,2,3,1};
-        int no_of_days=3;
+        int []days={2,2,3,3,4,4,1};
+        int no_of_days=4;
 
         System.out.println(allocation(days,no_of_days));
 
@@ -14,10 +14,7 @@ public class BOOKS_ALLOCATION {
         int sum=0;
         for(int val:arr)
         {
-            if(val>max)
-            {
-                max=val;
-            }
+            max=Math.max(val,max);
             sum=sum+val;
         }
         System.out.println(sum+" "+max);
