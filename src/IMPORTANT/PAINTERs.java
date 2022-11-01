@@ -1,10 +1,13 @@
 package IMPORTANT;
-
+import java.util.*;
 public class PAINTERs {
     public static void main(String[] args) {
-        ArrayList<Integer>=new  ArrayList<Integer>;
+        ArrayList<Integer> boards= new  ArrayList<Integer>();
+        int k=2;
+        int ans=findLargestMinDistance(boards,k);
+        System.out.println(ans);
     }
-}
+
     public static int findLargestMinDistance(ArrayList<Integer> boards, int k)
     {
         int sum=0;
