@@ -13,9 +13,6 @@ public class test {
             else{
                 hs.add(nums[i]);
             }
-
-
-
         }
         System.out.print(hs);
     }
