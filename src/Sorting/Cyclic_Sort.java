@@ -10,14 +10,20 @@ public class Cyclic_Sort {
     static void cyclic(int []arr)
     {
         //int index=value-1;
-        for(int i=0;i< arr.length;i++)
+        int i=0;
+       while(i<arr.length)
         {
-            int value=arr[i];
-            if(value!=i+1)
+            //int value=arr[i];
+            int correctIndex=arr[i]-1;
+            if(arr[i]!=arr[correctIndex])
             {
                 int temp=arr[i];
-                arr[i]=arr[value];
-                arr[value]=temp;
+                arr[i]=arr[correctIndex];
+                arr[correctIndex]=temp;
+            }
+            else
+            {
+                i++;
             }
         }
         System.out.println(Arrays.toString(arr));
