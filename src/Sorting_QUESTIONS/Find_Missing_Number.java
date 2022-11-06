@@ -25,7 +25,7 @@ public class Find_Missing_Number {
                 i++;
             }
         }
-
+        System.out.println(Arrays.toString(arr));
         for(int j=0;j< arr.length;j++)
         {
             if(arr[j]!=j)
