@@ -1,6 +1,6 @@
-package Random_Questions;
+package CODING_ROUND;
 
-import java.sql.SQLOutput;
+
 import java.util.HashMap;
 
 public class test {
@@ -26,8 +26,6 @@ public class test {
                 hm.put(ans,1);
                 ans="";
             }
-
-
         }
         if(ans.length()!=0)
         {
