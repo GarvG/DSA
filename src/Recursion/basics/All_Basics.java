@@ -15,9 +15,16 @@ public class All_Basics {
 //        Print1toNto1(n);
 //        System.out.println("---------------------------q3 ends-------------------");
 //        System.out.println(Fact(n));
+//        System.out.println("---------------------------q4 ends-------------------");
+//        System.out.println(Sumofdigits(n));
+//        System.out.println("---------------------------q5 ends-------------------");
+//        System.out.println(Productsofdigits(n));
+//        System.out.println("---------------------------q6 ends-------------------");
+//        System.out.println(Reverse(n));
+//        System.out.println("---------------------------q7 ends-------------------");
+        System.out.println(CountZeros(n));
+        System.out.println("---------------------------q8 ends-------------------");
 
-          System.out.println(Sumofdigits(n));
-        System.out.println(Productsofdigits(n));
     }
     static void Print1toN(int n)
     {
@@ -74,6 +81,44 @@ public class All_Basics {
         }
         int faith=Productsofdigits(n/10);
         return faith*(n%10);
+    }
+
+        static int Reverse(int n)
+        {
+            int digits=(int)(Math.log10(n))+1;
+           return Reversehelper(n,digits);
+        }
+    static int Reversehelper(int n,int count)
+    {
+        if(n/10==0)
+        {
+            return n;
+        }
+        int rem=n%10;
+
+        return rem*(int)(Math.pow(10,count-1))+Reversehelper(n/10,count-1);
+    }
+
+    static int CountZeros(int n)
+    {
+        int count=0;
+        if(n/10==0)
+        {
+            if(n==0)
+            {
+                return count++;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+        if(n%10==0)
+        {
+            count++;
+        }
+        int ans=CountZeros(n/10);
+        return ans+count;
     }
 
 
