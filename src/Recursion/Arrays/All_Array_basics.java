@@ -1,5 +1,6 @@
 package Recursion.Arrays;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class All_Array_basics {
@@ -15,6 +16,8 @@ public class All_Array_basics {
         System.out.println("------------Q3 ends----------------");
         System.out.println(LTarget(arr,4,0,6));
         System.out.println("------------Q4 ends----------------");
+        System.out.println(Arrays.toString(Alltarget(arr,4,0,6,0)));
+        System.out.println("------------Q5 ends----------------");
     }
     static void Sorted(int [] arr ,int start,int end)
     {
@@ -99,6 +102,30 @@ public class All_Array_basics {
         {
             return ans;
         }
+    }
+
+    static int [] Alltarget(int [] arr,int target,int start,int end,int count)
+    {
+        int ans[]={};
+        if(start==end-1)
+        {
+            int []arr1=new int[count];
+            return arr1;
+        }
+        if(arr[start]==target)
+        {
+             ans=Alltarget(arr,target,start+1,end,count+1);
+        }
+        else
+        {
+            ans=Alltarget(arr,target,start+1,end,count);
+        }
+
+        if(arr[start]==target)
+        {
+            ans[count]=start;
+        }
+        return ans;
     }
 
 }
