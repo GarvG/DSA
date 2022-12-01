@@ -31,7 +31,7 @@ public class Pratice {
 //        System.out.println(keys);
 //        System.out.println(hm.size());
 
-        int arr[]={1,2,2,1,1,3};
+        int arr[]={26,2,16,16,5,5,26,2,5,20,20,5,2,20,2,2,20,2,16,20,16,17,16,2,16,20,26,16};
         HashMap<Integer,Integer>hm =new HashMap<>();
         for(int i=0;i<arr.length;i++)
         {
@@ -46,19 +46,21 @@ public class Pratice {
                 hm.put(arr[i],1);
             }
         }
-      // System.out.println(hm);
-//        int count=hm.get(0);
-//        for(Integer val:hm.keySet())
-//        {
-//           if(count==hm.get(val))
-//           {
-//               System.out.println("repeat");
-//           }
-//           else
-//           {
-//               count=hm.get(val);
-//           }
-//        }
+       System.out.println(hm);
+        int count=hm.get(arr[0]);
+        System.out.println(count);
+        for(Integer val:hm.keySet())
+        {
+            System.out.println(hm.get(val));
+           if(count==hm.get(val))
+           {
+               System.out.println("repeat");
+           }
+           else
+           {
+               count=hm.get(val);
+           }
+        }
 
 //        int count=hm.get(3);
 //        System.out.println(count);
@@ -78,19 +80,19 @@ public class Pratice {
 //                count=arr[i];
 //            }
 
-        int count=hm.get(arr[0]);
-        for(int i=1;i<hm.size();i++)
-        {
-            if(count==hm.get(arr[i]))
-            {
-                System.out.println("REPEAT");
-                break;
-            }
-            else
-        {
-        count=hm.get(arr[i]);
-        }
-        }
+   //     int count=hm.get(arr[0]);
+//        for(int i=1;i<hm.size();i++)
+//        {
+//            if(count==hm.get(arr[i]))
+//            {
+//                System.out.println("REPEAT");
+//                break;
+//            }
+//            else
+//        {
+//        count=hm.get(arr[i]);
+//        }
+//        }
 
     }
 
