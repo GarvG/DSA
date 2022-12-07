@@ -42,4 +42,5 @@ public class subsequences {
         al.remove(al.size()-1);
         sub(arr,al,idx+1);
     }
+
 }
